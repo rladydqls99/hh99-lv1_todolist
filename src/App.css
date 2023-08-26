@@ -1,38 +1,96 @@
 .App {
-  text-align: center;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+  margin: 10px 100px 0px 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  border: 3px solid #007bff;
+  border-radius: 8px;
+  margin: 20px auto;
+
+  font-size: 30px;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 0px 20px 0px 20px;
+  gap: 10px;
+}
+.inputBox > input {
+  max-width: 75%;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  border-radius: 13px;
+  padding: 5px;
+}
+.inputBox > button {
+  margin-left: auto;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.Main {
+  position: relative;
+  border: 1px solid white;
+}
+.Working {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #007bff; /* 배경색 예시, 원하는 색상으로 변경 가능 */
+  padding: 5px 10px;
+  border-radius: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Done {
+  position: absolute;
+  top: 100;
+  left: 0;
+  background-color: #007bff; /* 배경색 예시, 원하는 색상으로 변경 가능 */
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Todo {
+  margin-top: 70px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.TodoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+button {
+  padding: 5px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
 }
