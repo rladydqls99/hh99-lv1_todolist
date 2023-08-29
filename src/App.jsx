@@ -27,6 +27,8 @@ function App() {
       contents: contents,
       isDone: false,
     };
+    setTitle("");
+    setContents("");
     return setInputs([...inputs, newInputs]);
   };
   // ----------------------------------------
