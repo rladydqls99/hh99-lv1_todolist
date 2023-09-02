@@ -1,10 +1,12 @@
-const TodoBox = ({
+import React from "react";
+
+function Item({
   item,
   clickRemoveButtonHandler,
   clickChangeStateButtonHandler,
-}) => {
+}) {
   return (
-    <div className="TodoBox" key={item.id}>
+    <div className="TodoBox">
       <h2>{item.title}</h2>
       <p>{item.contents}</p>
       <div className="button-group">
@@ -17,6 +19,6 @@ const TodoBox = ({
       </div>
     </div>
   );
-};
+}
 
-export default TodoBox;
+export default Item;
